@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+	<title>KONTAKT</title>
+</head>
+<body>
+	<div class="container sivo mt-2 naslovlokacija" >
+			<a href="index.html" id="home">
+				<img src="arrowleft.png" id="home" class="justify-content-start" >
+			</a>
+			<h1 class="text-light ml-5 ">Kontakt</h1>
+	</div>
+	<div class="container bg-secondary kontakt mb-0 p-5 text-center">
+		<h4 class="text-light">Prijave i informacije</h4>
+		<p class="text-light" id="kontakttekst">Prijava zainteresovanih učesnika i potvrda dolaska za Konferenciju je putem telefona +381 21 48 92 511, kontakt osobe su Varvara Lazarević i Jovana Kopanja.
+
+		Možete i da nas kontaktirate putem maila:</p>
+	</div>
+	<div class="container bg-dark justify-content-center py-3 text-center formakontejner ">
+		<form name="kontaktforma" onsubmit="return proveraForme()">
+  			<div class="form-group ">
+    			<label class="text-light">Vaša e-mail adresa:</label>
+    			<span id="error-email"></span>
+    			<input type="email" class="form-control" name="emailadresa" placeholder="E-mail" id="email" onclick="opacityinput(this,'1')" onmouseout="opacityinput(this, '0.5')">
+  			</div>
+  			<div class="form-group">
+  				<label class="text-light">Naslov:</label>
+  				<span id="error-naslov"></span>
+  				<input type="text" class="form-control" name="naslov" placeholder="Naslov" id="naslov" onclick="opacityinput(this,'1')" onmouseout="opacityinput(this, '0.5')">
+  			</div>
+  			<div class="form-group ">
+  				<label class="text-light">Vaša poruka:</label>
+  				<span id="error-poruka"></span>
+  				<input type="text" class="form-control " name="poruka" placeholder="Vaša poruka" id="poruka" onclick="opacityinput(this,'1')" onmouseout="opacityinput(this, '0.5')">
+  			</div>
+  			<div class="form-check mr-3">
+    			<button type="submit" class="btn btn-light" >Pošalji</button>
+    			<button type="reset" class="btn btn-light">Obriši</button>
+  			</div>
+  			
+		</form>
+	</div>
+	<div class="container bg-secondary justify-content-center py-3 text-center">
+		
+		<div class="  row logoi py-2 ">
+			<div class="col-sm">
+				<a href="http://vtsns.edu.rs">
+					<img src="VTS.png"  class="img-fluid" onclick="rotate(this)" onmouseover="opacityslike(this,'1')" onmouseout="opacityslike(this,'0.7')">
+				</a>
+			</div>
+			<div class="">
+				<a href="http://fimek.edu.rs" >
+					<img src="FIMEK.png" class="img-fluid" onclick="rotate(this)" onmouseover="opacityslike(this,'1')" onmouseout="opacityslike(this,'0.7')">
+				</a>
+			</div>
+		</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
